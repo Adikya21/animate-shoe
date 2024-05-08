@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+</head>
+<body>
+    <p>Hello Maya</p>
+    <section>
+        <h1>world</h1>
+    </section>
+</body>
+</html>
+<style>
+    p{
+        transition: 5s;
+    }
+    p:hover{
+        border:1px solid rgb(220, 49, 6);
+        background-color: black;
+        color: azure;
+        width: 15%;
+        height: 3rem;
+        border-radius: 3rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        height: 300px;
+        width: 300px;
+        background: blueviolet;
+        transition: 3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        animation: left-to-right 2s infinite ease-in;
+    }
+    /* section:hover{
+        transform: rotate(35deg);
+        background: red;
+        border-radius: 50%;
+        transform: translateY(50%);
+        text-up
+    } */
+    @keyframes left-to-right{
+        0%{
+            top:10%;
+            left:0;
+            background: blueviolet;
+            transform: rotate(0deg);
+        }
+        50%{
+            left:50%;
+            background: red;
+            transform: rotate(30deg);
+        }
+        100%{
+            left:100%;
+            background: yellow;
+            transform: rotate(80deg);
+        }
+    }
+</style>
